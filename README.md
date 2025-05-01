@@ -24,21 +24,21 @@ it allows the user to register an account, login to cat-blog-me app, and post wh
 
 ## REST API Routes
 
-- /api/v1/cat/account
-  - GET: /login
-  - POST: /register
-  - UPDATE: /edit
-  - DELETE: /delete
-- /api/v1/cat/profile
-  - GET: /info
-  - UPDATE: /info
-- /api/v1/cat/:id/
-  - GET: /posts
-  - POST: /post
-  - UPDATE: /update
-  - DELETE: /remove
-- /api/v1/cat/:id/colony
-  - GET: /colony
+- `/api/v1/cat/account`
+  - GET: `/login`
+  - POST: `/register`
+  - UPDATE: `/edit`
+  - DELETE: `/delete`
+- `/api/v1/cat/profile`
+  - GET: `/info`
+  - UPDATE: `/info`
+- `/api/v1/cat/meow`
+  - GET: `/`
+  - POST: `/`
+  - UPDATE: `/:id`
+  - DELETE: `/:id`
+- `/api/v1/cat/:id/colony`
+  - GET: `/colony`
 
 ## Goal
 
