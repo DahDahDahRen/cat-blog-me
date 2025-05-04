@@ -2,6 +2,8 @@ const AppError = require("../utils/AppError");
 
 // Error handler
 const errorHandler = (err, req, res, next) => {
+  console.log(err);
+
   // Check err object
   if (err instanceof AppError) {
     return res.status(err.statusCode).json({

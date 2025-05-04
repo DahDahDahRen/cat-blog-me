@@ -13,8 +13,8 @@ router.get("/", protectedRoute, getPosts);
 
 router.post("/", protectedRoute, validatePost, createPost);
 
-router.patch("/:id", updatePost);
+router.patch("/:id", protectedRoute, validatePost, updatePost);
 
-router.delete("/:id", deletePost);
+router.delete("/:id", protectedRoute, deletePost);
 
 module.exports = router;
